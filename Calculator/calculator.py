@@ -6,7 +6,7 @@ answer = ''
 while True:
 
     try:
-        s = input('You can do:\naddition \nsubtraction \nmultiplication \ndivision \ninteger division \nmodulus \nand exponent.\nType quit to end the program. \nType answer to use previous answer as one of the numbers\n')
+        s = input('You can do:\naddition \nsubtraction \nmultiplication \ndivision \nmodulus \nand exponents.\nType quit to end the program. \nType answer to use previous answer as one of the numbers\n')
 
         if s == 'addition':
             num1 = input('What is the the first number?\n')
@@ -42,24 +42,13 @@ while True:
             time.sleep(2)
 
         elif s == 'division':
-            num1 = float(input('What is the the dividend?\n'))
+            num1 = float(input('What is the dividend?\n'))
             num2 = float(input('What is the divsor?\n'))
             if num1 == 'answer':
                 num1 = float(answer)
             if num2 == 'answer':
                 num2 = float(answer)
             answer = (str(float(num1) / float(num2)))
-            print('The quotient is ' + answer + '\n')
-            time.sleep(2)
-
-        elif s == 'integer division':
-            num1 = input('What is the the dividend?\n')
-            num2 = input('What is the divsor?\n')
-            if num1 == 'answer':
-                num1 = float(answer)
-            if num2 == 'answer':
-                num2 = float(answer)
-            answer = (str(float(num1) // float(num2)))
             print('The quotient is ' + answer + '\n')
             time.sleep(2)
 
@@ -74,7 +63,7 @@ while True:
             print('The remainder is ' + answer + '\n')
             time.sleep(2)
 
-        elif s == 'exponent':
+        elif s == 'exponents':
             num1 = input('What is the the base?\n')
             num2 = input('What is the power?\n')
             if num1 == 'answer':
@@ -91,7 +80,7 @@ while True:
             break
 
         else:
-            print('\nERROR: Unkown operator')
+            print('\nERROR: Unknown operator')
             time.sleep(2)
 
     except ValueError:
