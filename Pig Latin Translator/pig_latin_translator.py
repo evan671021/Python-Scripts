@@ -4,7 +4,7 @@ while True:
     first = word[0]
     if first in vowels:
         answer = word + 'ay'
-    elif: word == 'quit':
+    elif word == 'quit':
         break
     else:
         answer = word[1:] + first + 'ay'
